@@ -6,6 +6,7 @@ app.get('/', (req, res) => {
   res.send('Hello from ECS Node.js App!');
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`App running on port ${port}`);
 });
+
